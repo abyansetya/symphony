@@ -34,16 +34,15 @@ The **Symphony Testnet Bot** is a script designed to interact with the Symphony 
 
 3. **Create `seeds.json` file:**
 
-   You need to create a `seeds.json` file in the root directory of the project. This file should contain an array of mnemonics for your wallets. Example format:
+   You need to create a `seeds.json` file in the root directory of the project. This file should contain an array of private key for your wallets. Example format:
 
    ```json
    [
-     "apple banana grape",
-     "ball skate basket"
+     "138rdascnau3fbakfbeu",
    ]
    ```
 
-   Replace the example mnemonics with your actual wallet mnemonics.
+   Replace the example private key with your actual wallet private key.
 
 ### Running the Bot
 
@@ -84,18 +83,7 @@ The **Symphony Testnet Bot** is a script designed to interact with the Symphony 
 
 Feel free to fork the repository and make pull requests. For any issues or feature requests, please open an issue in the GitHub repository.
 
-## Donations
-
-If you would like to support the development of this project, you can make a donation using the following addresses:
-
-- **Solana**: `GLQMG8j23ookY8Af1uLUg4CQzuQYhXcx56rkpZkyiJvP`
-- **EVM**: `0x960EDa0D16f4D70df60629117ad6e5F1E13B8F44`
-- **BTC**: `bc1p9za9ctgwwvc7amdng8gvrjpwhnhnwaxzj3nfv07szqwrsrudfh6qvvxrj8`
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Support
-
-For support and updates, join our [Telegram channel](https://t.me/HappyCuanAirdrop).
