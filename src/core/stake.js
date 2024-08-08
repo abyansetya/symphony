@@ -97,18 +97,6 @@ async function executeTransactions(txCount, valoper) {
     "Choose an option (1: One-time run // 2: Schedule daily run): "
   );
 
-  //select random validator
-  const validatorPath = path.join(__dirname, "proxy.txt");
-  let validators = [];
-
-  if (fs.existsSync(validatorPath)) {
-    validators = fs.readFileSync(validatorPath, "utf-8").trim().split("\n");
-  } else {
-    console.error(
-      chalk.red(`❌ Validator file not found at path: ${proxiesPath}`)
-    );
-    process.exit(1);
-  }
 
   const valoper =
     readlineSync.question(

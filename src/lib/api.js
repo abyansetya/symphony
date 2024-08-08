@@ -16,12 +16,11 @@ const fetchProxies = async (url) => {
 function parseProxy(proxy) {
   const parts = proxy.split(":");
   if (parts.length === 4) {
-    const [username, password, host, port] = parts;
-    return { username: username, password: password, host: host, port: port };
-  } else if (parts.length === 2) {
-    const [host, port] = parts;
-    return { host: host, port: port };
-  } else throw new Error("Invalid proxy format: " + proxy);
+    const [host, port, username, password] = parts;
+    return { host: host, port: port, username: username, password: password };
+  } else {
+    throw new Error("Invalid proxy format: " + proxy);
+  }
 }
 
 const getFaucet = async (address, proxy) => {

@@ -20,6 +20,10 @@ const createWalletFromPrivateKey = async (privateKeyHex, prefix) => {
   return wallet;
 };
 
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 // Resolve __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -80,6 +84,7 @@ export default async function runFaucetClaim() {
         continue; // Try the next proxy
       }
     }
+    await delay(5000);
   }
 }
 
